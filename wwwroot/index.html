@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Grade Calculator</title>
+    <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <p>
+        <h2>Grade Calculator</h2>
+        <h3>Please Enter Your Grade For Each Section</h3>
+        <table id="grade">
+
+            <tr>
+                <th>Type</th>
+                <th>Weight</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>Homework</td>
+                <td>25%</td>
+                <td><input type="text" id="homework" size=2 value=""></td>
+            </tr>
+
+            <tr>
+                <td>Labs</td>
+                <td>20%</td>
+                <td><input type="text" id="labs" size=2 value=""></td>
+            </tr>
+
+            <tr>
+                <td>Midterm</td>
+                <td>25%</td>
+                <td><input type="text" id="midterm" size=2 value=""></td>
+            </tr>
+
+            <tr>
+                <td>Final Exam</td>
+                <td>30%</td>
+                <td><input type="text" id="finals" size=2 value=""></td>
+            </tr>
+
+        </table>
+        <br>
+        <br>
+    </p>
+    <input type="button" class="button" value="Calculate Your Grade"
+           onclick="calculator()">
+    <br /><br />
+    <hr>
+    <br /><br />
+    <div id="outputDiv" style="height: 50px; width: 100%;"></div>
+    
+    <script src="/js/grade.js"></script>
+</body>
+</html>
