@@ -2,10 +2,38 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Grade Calculator</title>
     <link href="/css/main.css" rel="stylesheet" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Pretty Cool</title>
 </head>
 <body>
+    <h1>Lauren Daines</h1>
+
+    <div class="polaroid">
+        <img src="img/stuff.JPG" alt="stuff" style="width:100%">
+        <div class="container">
+            <p>1/20/2021</p>
+        </div>
+    </div>
+
+    <p>
+        I have a collage of my desk, my favorite sushi place, and my fuzzy slippers in this picture — all of which I enjoy immensely.
+        This semester I want to develop my skills to make me marketable as a BYU graduate and allow me to make more money. I also wouldn't mind learning how to use AWS, but mostly I want to make more money. Learning AWS will probably help.
+    </p>
+    <br />
+    <div class="list">
+        <p style="text-align: center;">Top 3 Jobs:</p>
+        <ol>
+            <li>Product Manager</li>
+            <li>Business Consultant</li>
+            <li>Data Analyst</li>
+        </ol>
+    </div>
+    
+    <br /><br />
+    <hr />
+    <br /><br />
     <p>
         <h2>Grade Calculator</h2>
         <h3>Please Enter Your Grade For Each Section</h3>
@@ -18,40 +46,45 @@
             </tr>
 
             <tr>
-                <td>Homework</td>
-                <td>25%</td>
-                <td><input type="text" id="homework" size=2 value=""></td>
+                <td>Assignments</td>
+                <td>50%</td>
+                <td><input type="text" id="assignments" size=2 value=""></td>
             </tr>
 
             <tr>
-                <td>Labs</td>
+                <td>Group Project</td>
+                <td>10%</td>
+                <td><input type="text" id="groupproject" size=2 value=""></td>
+            </tr>
+
+            <tr>
+                <td>Quizzes</td>
+                <td>10%</td>
+                <td><input type="text" id="quizzes" size=2 value=""></td>
+            </tr>
+
+            <tr>
+                <td>Exams</td>
                 <td>20%</td>
-                <td><input type="text" id="labs" size=2 value=""></td>
+                <td><input type="text" id="exams" size=2 value=""></td>
             </tr>
 
             <tr>
-                <td>Midterm</td>
-                <td>25%</td>
-                <td><input type="text" id="midterm" size=2 value=""></td>
-            </tr>
-
-            <tr>
-                <td>Final Exam</td>
-                <td>30%</td>
-                <td><input type="text" id="finals" size=2 value=""></td>
+                <td>INTEX</td>
+                <td>10%</td>
+                <td><input type="text" id="intex" size=2 value=""></td>
             </tr>
 
         </table>
-        <br>
-        <br>
+        <br /><br />
     </p>
     <input type="button" class="button" value="Calculate Your Grade"
            onclick="calculator()">
     <br /><br />
-    <hr>
+    <hr />
     <br /><br />
     <div id="outputDiv" style="height: 50px; width: 100%;"></div>
-    
+
     <script src="/js/grade.js"></script>
 </body>
 </html>
