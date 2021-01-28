@@ -1,0 +1,74 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model GradeModel
+
+<body>
+
+    <h2>Grade Calculator</h2>
+    <h3>Please Enter Your Grade For Each Section</h3>
+
+    <!--table to collect information from user-->
+    <form method="post" asp-action="Grade">
+        <div asp-validation-summary="All"></div>
+
+        <table id="grade">
+
+            <tr>
+                <th>Type</th>
+                <th>Weight</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td><label for="Assignments">Assignments</label></td>
+                <td>50%</td>
+                <td><input type="number" id="Assignments" asp-for="Assignments" size=2 value="" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="GroupProject">Group Project</label></td>
+                <td>10%</td>
+                <td><input type="number" id="GroupProject" asp-for="GroupProject" size=2 value="" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="Quizzes">Quizzes</label></td>
+                <td>10%</td>
+                <td><input type="number" id="Quizzes" asp-for="Quizzes" size=2 value="" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="Exams">Exams</label></td>
+                <td>20%</td>
+                <td><input type="number" id="Exams" asp-for="Exams" size=2 value="" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="Intex">INTEX</label></td>
+                <td>10%</td>
+                <td><input type="number" id="Intex" asp-for="Intex" size=2 value="" /></td>
+            </tr>
+
+        </table>
+
+        <br /><br />
+
+        <!--button to call javascript grade function-->
+        <button type="submit" class="button" value="Calculate Your Grade"
+               onclick="calculator()">Calculate Grade</button>
+
+    </form>
+
+    
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <!--div container for output of Grade Calculator Program-->
+    <div><p id="outputDiv"></p></div>
+
+</body>

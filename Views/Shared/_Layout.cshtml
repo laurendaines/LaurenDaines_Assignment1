@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--link to style sheet-->
+    <link href="~/css/main.css" rel="stylesheet" />
+    <!--link for icon in title bar-->
+    <link rel="icon" href="~/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--text for title bar-->
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <!--header information-->
+    <header>
+        <h1>@ViewBag.Header</h1>
+    </header>
+
+    <!--navigation bar-->
+    <ul>
+        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li><a asp-controller="Home" asp-action="Grade">Grade</a></li>
+    </ul>
+
+    <!--calls the body of the layout from the other pages-->
+    @RenderBody()
+
+    <!--optional footer-->
+    <footer></footer>
+    <!--link to jquery file-->
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <!--link to javascript file-->
+    <script src="~/js/grade.js"></script>
+</body>
+</html>

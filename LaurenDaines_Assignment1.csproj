@@ -5,14 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NewFolder\**" />
     <Compile Remove="wwwroot\NewFolder1\**" />
-    <Content Remove="NewFolder\**" />
     <Content Remove="wwwroot\NewFolder1\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
     <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
-    <None Remove="NewFolder\**" />
     <None Remove="wwwroot\NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
   </ItemGroup>
 
 </Project>
